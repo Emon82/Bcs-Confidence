@@ -1,0 +1,27 @@
+.navimage{
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url("../../assets/image/homeCover.jpg");
+    background-attachment: fixed;
+}
+.overly{
+    background-color:#000000a3 ;
+    height: 100%;
+    width: 100%;
+}
+.address{
+    display: flex;
+    color: white;
+}
+.addressancor{
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+.addressancor a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
