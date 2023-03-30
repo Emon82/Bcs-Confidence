@@ -5,13 +5,14 @@
     width: 100%;
     background-image: url("../../assets/image/homeCover.jpg");
     background-attachment: fixed;
+    
 }
 .overly{
     background-color:#000000a3 ;
     height: 100%;
     width: 100%;
 }
-.address{
+.address{ 
     display: flex;
     color: white;
 }
@@ -25,3 +26,51 @@
     margin: 10px;
     color: white;
 }
+/* Center the logo and menu items */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Change the font size and weight of the menu items */
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Change the color of the active menu item */
+  .navbar .nav-link.active,
+  .navbar .nav-link:focus {
+    color: #007bff;
+  }
+  
+  /* Change the background color of the dropdown menu */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+  
+  /* Change the color of the dropdown menu items */
+  .dropdown-item {
+    color: #212529;
+  }
+  
+  /* Change the color of the dropdown menu items when hovered */
+  .dropdown-item:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+  }
+  
+  /* Change the color of the menu toggle icon */
+  .navbar-toggler-icon {
+    color: #007bff;
+  }
+  
+  /* Change the background color of the menu toggle button when active */
+  .navbar-toggler:focus {
+    background-color: transparent;
+  }
+  .corsbutton{
+    background-color: yellow;
+  }
+  
