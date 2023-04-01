@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../../Component/NavBar/NavBar";
-import Information from "../../Component/PersonInformation/information";
+import Information from "../../Component/PersonInformation/Information";
 import logo from "../../assets/image/homeCover.jpg";
 import WeAre from "../../Component/WeAre.jsx/WeAre";
 import Cores from "../../Component/CorseDescription/Cores";

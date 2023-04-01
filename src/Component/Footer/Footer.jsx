@@ -33,7 +33,7 @@ const Footer = () => {
                 <h5><a href="javascript:;">২৬, ইন্দিরা রোড, মা মেডিসিন ও UCB Bank বুথের ২য় তলা, ফার্মগেইট, ঢাকা</a></h5>
                 {/* @if($footcon->email) */}
                 {/* <h5><a href="mailto:{{$footcon->email}}">{{$footcon->email}}</a></h5> */}
-                <h5><a href="">info@bcs-confidence.com</a></h5>
+                <h5><a href="">info@bcs-confidence.net</a></h5>
                 {/* @endif */}
                 {/* @if($footcon->phone) */}
                 {/* <h5><a href="tel:{{$footcon->phone}}">{{$footcon->phone}}</a></h5> */}

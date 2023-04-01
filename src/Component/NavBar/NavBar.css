@@ -1,9 +1,9 @@
 .navimage{
-    background-size: cover;
-    height: 100vh;
+    background-size: contain;
+    height: auto;
     background-repeat: no-repeat;
     width: 100%;
-    background-image: url("../../assets/image/homeCover.jpg");
+    background-image: url("../../assets/image/homeCover2.jpg");
     background-attachment: fixed;
     
 }

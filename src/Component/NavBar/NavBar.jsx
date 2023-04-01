@@ -1,7 +1,7 @@
-import React from 'react'
-import './NavBar.css'
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../../assets/image/bcslogo.png'
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import logo from '../../assets/image/bcslogo.png';
+import './NavBar.css';
 
 export default function NavBar({image}) {
 return (
@@ -12,21 +12,21 @@ return (
             <div className="row">
                 <div className="col-md-6 address">
                 <p style={{margin:"10px"}}>+8801922-101514/15</p>
-                <p style={{margin:"10px"}}>info@bcs-confidence.com</p>
+                <p style={{margin:"10px"}}>info@bcs-confidence.net</p>
                 </div>
                 <div className="col-md-6 addressancor" >
-                    <a  href="">লগ-ইন</a>
+                    <a  href="">Go to Exam panel</a>
                     <a  href="">রেজিষ্ট্রেশন</a>
                 </div>
             </div>
             <Navbar  expand="lg">
       <Container>
-        <Navbar.Brand > <img style={{maxWidth:"100%",height:"50px"}} src={logo} alt="" /></Navbar.Brand>
+        <Navbar.Brand > <a href="/"> <img style={{maxWidth:"100%",height:"50px",cursor:"pointer"}} src={logo} alt="" /></a></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" >
-            <Nav.Link style={{color:"white"}} href="#home">হোম</Nav.Link>
-            <Nav.Link style={{color:"white"}} href="#link">আমাদের সম্পর্কে</Nav.Link>
+            <Nav.Link style={{color:"white"}} href="/">হোম</Nav.Link>
+            <Nav.Link style={{color:"white"}} href="/about">আমাদের সম্পর্কে</Nav.Link>
             <Nav.Link style={{color:"white"}} href="#about">শাখা সমূহ </Nav.Link>
             <Nav.Link style={{color:"white"}} href="#contact">কোর্স সমূহ</Nav.Link>
             <Nav.Link style={{color:"white"}} href="#contact">এক্সাম সমূহ</Nav.Link>

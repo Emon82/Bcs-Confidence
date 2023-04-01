@@ -22,8 +22,10 @@
 }
 
 .home_footer {
-    padding-bottom: 0 !important;
+    /* padding-bottom: 0 !important; */
     margin-top: 70px;
+    background-color: gainsboro;
+    padding: 30px;
 }
 
 .social {

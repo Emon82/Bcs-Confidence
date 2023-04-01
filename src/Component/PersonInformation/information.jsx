@@ -1,8 +1,10 @@
 import React from 'react'
 import Slider from "react-slick";
 import InformationCard from "../InformationCard"
+import Information2 from './information2';
+import Information3 from './Information3';
 
-export default function information() {
+export default function Information() {
     const settings = {
         dots: true,
         infinite: true,
@@ -19,14 +21,12 @@ export default function information() {
         <InformationCard/>
       </div>
       <div>
-        <InformationCard/>
+        <Information2/>
       </div>
       <div>
-      <InformationCard/>
+      <Information3/>
       </div>
-      <div>
-      <InformationCard/>
-      </div>
+      
     </Slider>
   </div>
   )
