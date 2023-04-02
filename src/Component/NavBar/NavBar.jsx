@@ -15,7 +15,7 @@ return (
                 <p style={{margin:"10px"}}>info@bcs-confidence.net</p>
                 </div>
                 <div className="col-md-6 addressancor" >
-                    <a  href="">Go to Exam panel</a>
+                    <a  href="https://bcs-confidence.prostuti.net/">Go to Exam panel</a>
                     <a  href="">রেজিষ্ট্রেশন</a>
                 </div>
             </div>
@@ -27,10 +27,10 @@ return (
           <Nav className="me-auto" >
             <Nav.Link style={{color:"white"}} href="/">হোম</Nav.Link>
             <Nav.Link style={{color:"white"}} href="/about">আমাদের সম্পর্কে</Nav.Link>
-            <Nav.Link style={{color:"white"}} href="#about">শাখা সমূহ </Nav.Link>
-            <Nav.Link style={{color:"white"}} href="#contact">কোর্স সমূহ</Nav.Link>
-            <Nav.Link style={{color:"white"}} href="#contact">এক্সাম সমূহ</Nav.Link>
-            <Nav.Link style={{color:"white"}} href="#contact">যোগাযোগ</Nav.Link>
+            <Nav.Link style={{color:"white"}} href="/branches">শাখা সমূহ </Nav.Link>
+            <Nav.Link style={{color:"white"}} href="#">কোর্স সমূহ</Nav.Link>
+            <Nav.Link style={{color:"white"}} href="/examportal">এক্সাম সমূহ</Nav.Link>
+            <Nav.Link style={{color:"white"}} href="/contact">যোগাযোগ</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
