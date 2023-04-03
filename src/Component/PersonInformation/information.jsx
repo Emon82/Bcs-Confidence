@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Slider from "react-slick";
-import InformationCard from "../InformationCard"
-import Information2 from './information2';
+import InformationCard from "../InformationCard";
 import Information3 from './Information3';
+import Information2 from './information2';
 
 export default function Information() {
     const settings = {
