@@ -4,6 +4,12 @@ import logo from '../../assets/image/bcslogo.png';
 import './NavBar.css';
 
 export default function NavBar({image}) {
+
+
+
+
+
+
 return (
 <div className='navimage' >
 
@@ -40,8 +46,8 @@ return (
             <h5 style={{color:"white"}}>BCS কনফিডেন্স ১৯৯১ সালে প্রতিষ্ঠিত চাকুরি প্রার্থীদের একটি সহায়ক প্রতিষ্ঠান</h5>
         </div>
         <div className="text-center" >
-        <button style={{backgroundColor:"#f1c40f",borderRadius:"5px", height:"45px",margin:"65px",width:"140px"}}> কোর্স সমূহ</button>
-        <button style={{backgroundColor:"#f1c40f",borderRadius:"5px", height:"45px",width:"200px"}}>বিনামূল্যে পরামর্শ নিন</button>
+        <button style={{backgroundColor:"#f1c40f",borderRadius:"5px", height:"45px",margin:"65px",width:"140px",color:"white",fontSize:"1.25rem", border:"none"}}> কোর্স সমূহ</button>
+        <button style={{backgroundColor:"#f1c40f",borderRadius:"5px", height:"45px",width:"200px",color:"white",fontSize:"1.25rem", border:"none"}}>বিনামূল্যে পরামর্শ নিন</button>
         </div>
         </div>
     </div>

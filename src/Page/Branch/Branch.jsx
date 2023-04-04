@@ -6,6 +6,7 @@ export default function Branch() {
   return (
     <div>
       <NavBar/>
+      <h1 style={{textAlign:"center",padding:"15px",margin:"10px"}}>ঢাকার শাখাসমূহ</h1>
       <BranchComponent/>
       <Footer/>
     </div>
