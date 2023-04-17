@@ -23,7 +23,7 @@ export default function NavBar({ image }) {
               <p style={{ margin: "10px" }}>info@bcs-confidence.net</p>
             </div>
             <div className="col-md-6 addressancor">
-              <a href="https://bcs-confidence.prostuti.net/">
+              <a href="https://bcsconfidence.prostuti.net/">
                 Go to Exam panel
               </a>
               <a href="">রেজিষ্ট্রেশন</a>
