@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import "./Footer.css";
 
 const Footer = () => {
@@ -70,7 +70,7 @@ const Footer = () => {
             <div class="logo">
               {/* <img class="img-fluid w-50" src="@if($homepage->logo) {{asset($homepage->logo)}}  @else {{asset('frontend/images/logo.png')}} @endif" alt=""> */}
 
-              <img class="img-fluid w-80" style={{width: "137px"}} src="https://bcs-confidence.prostuti.net/admin/media/logo/logo-63a43964406bc.png" alt="" />
+              <img class="img-fluid w-80" style={{width: "137px"}} src="https://bcsconfidence.prostuti.net/admin/media/logo/logo-63a43964406bc.png" alt="" />
             </div>
 
             <h5 class="mb-2">Follow Us On:</h5>
