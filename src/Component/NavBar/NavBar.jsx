@@ -1,118 +1,114 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { FaBook, FaHome, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import logo from "../../assets/image/bcslogo.png";
-import "./NavBar.css";
 
-export default function NavBar({ image }) {
-  const navigate = useNavigate();
+const Navbar = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
 
-  const redirect = (to) => (e) => {
-    // Do something before navigating
-    e.preventDefault();
-    navigate(to);
-  };
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
 
+const Logo = styled.h1`
+  font-size: 1.5rem;
+`;
+
+const NavLinks = styled.ul`
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
+`;
+
+const NavLink = styled.li`
+  font-size: 1rem;
+`;
+
+const MenuLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color:white;
+    font-width:bold;
+  }
+
+  & > svg {
+    margin-right: 0.5rem;
+  }
+`;
+
+function MenuBar() {
   return (
-    <div className="navimage">
-      <div className="overly">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 address">
-              <p style={{ margin: "10px" }}>+8801922-101514/15</p>
-              <p style={{ margin: "10px" }}>info@bcs-confidence.net</p>
-            </div>
-            <div className="col-md-6 addressancor">
-              <a href="https://bcs-confidence.prostuti.net/">
-                Go to Exam panel
-              </a>
-              <a href="">রেজিষ্ট্রেশন</a>
-            </div>
-          </div>
-          <Navbar expand="lg">
-            <Container>
-              <Navbar.Brand>
-                {" "}
-                <a href="/">
-                  {" "}
-                  <img
-                    style={{
-                      maxWidth: "100%",
-                      height: "50px",
-                      cursor: "pointer",
-                    }}
-                    src={logo}
-                    alt=""
-                  />
-                </a>
-              </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                  <Nav.Link
-                    style={{ color: "white" }}
-                    onClick={redirect('/')}
-                  >
-                    হোম
-                  </Nav.Link>
-                  <Nav.Link style={{ color: "white" }}  onClick={redirect("/about")}> 
-                    আমাদের সম্পর্কে
-                  </Nav.Link>
-                  <Nav.Link style={{ color: "white" }} onClick={redirect("/branches")}>
-                    শাখা সমূহ{" "}
-                  </Nav.Link>
-                  <Nav.Link style={{ color: "white" }} onClick={redirect("#")} >
-                    কোর্স সমূহ
-                  </Nav.Link>
-                  <Nav.Link style={{ color: "white" }} onClick={redirect("/examportal")}>
-                    এক্সাম সমূহ
-                  </Nav.Link>
-                  <Nav.Link style={{ color: "white" }} onClick={redirect("/contact")}>
-                    যোগাযোগ
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-          <div className="text-center" style={{ marginTop: "250px" }}>
-            <h1 style={{ color: "yellow" }}>BCS Confidence</h1>
-            <h5 style={{ color: "white" }}>
-              BCS কনফিডেন্স ১৯৯১ সালে প্রতিষ্ঠিত চাকুরি প্রার্থীদের একটি সহায়ক
-              প্রতিষ্ঠান
-            </h5>
-          </div>
-          <div className="text-center">
-            <button
-              style={{
-                backgroundColor: "#f1c40f",
-                borderRadius: "5px",
-                height: "45px",
-                margin: "65px",
-                width: "140px",
-                color: "white",
-                fontSize: "1.25rem",
-                border: "none",
-              }}
-            >
-              {" "}
-              কোর্স সমূহ
-            </button>
-            <button
-              style={{
-                backgroundColor: "#f1c40f",
-                borderRadius: "5px",
-                height: "45px",
-                width: "200px",
-                color: "white",
-                fontSize: "1.25rem",
-                border: "none",
-              }}
-            >
-              বিনামূল্যে পরামর্শ নিন
-            </button>
-          </div>
-        </div>
+    <div className="row">
+    <Navbar>
+     
+        <div className="col-md-2" style={{textAlign:"center"}}>
+      <Logo><img style={{height:"80px"}} src={logo} alt="" /></Logo>
+
       </div>
+      
+      <>
+        <div className="col-md-6">
+        <NavLink style={{display:"flex",justifyContent:"space-between",alignItems:"center"}} >
+          <MenuLink to="/">
+            <FaHome />
+            হোম
+          </MenuLink>
+          <MenuLink to="/about">
+            আমাদের সম্পর্কে
+          </MenuLink>
+          <MenuLink to="/branches">
+            শাখা সমূহ
+          </MenuLink>
+          <MenuLink to="">
+            কোর্স সমূহ
+          </MenuLink>
+          <MenuLink to="/examportal">
+            এক্সাম সমূহ
+          </MenuLink>
+          <MenuLink to="/contact">
+            যোগাযোগ
+          </MenuLink>
+        </NavLink>
+        </div>
+
+<div className="col-md-4" style={{display:"flex",justifyContent:"end",padding:"15px"}}>
+  <NavLinks>
+        <NavLink>
+          <MenuLink to="/login">
+            <FaUser />
+            Login
+          </MenuLink>
+        </NavLink>
+        <NavLink>
+          <MenuLink to="https://bcsconfidence.prostuti.net/">
+            <FaBook />
+            Exam
+          </MenuLink>
+        </NavLink>
+        </NavLinks>
+        </div>
+      </>
+      
+    </Navbar>
     </div>
   );
 }
+
+export default MenuBar;
