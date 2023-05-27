@@ -7,6 +7,7 @@ import ExamPanel from "./Page/ExamPanel/ExamPanel";
 import Home from "./Page/Home/Home";
 import Rule from "./Page/Rule";
 import Special from "./Page/Special";
+import Course from "./Page/Courses/Course";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/examportal" element={<ExamPanel />} />
         <Route path="/rules" element={<Rule />} />
         <Route path="/special" element={<Special />} />
+        <Route path="/course" element={<Course />} />
         
       </Routes>
     </BrowserRouter>

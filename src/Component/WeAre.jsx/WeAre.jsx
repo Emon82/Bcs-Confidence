@@ -1,38 +1,6 @@
 import React from "react";
-const weare = [
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/priliicon.png",
-    title: "BCS প্রিলিমিনারি",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/office-material.png",
-    title: "BCS লিখিত",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/job-interview.png",
-    title: "BCS ভাইভা",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/teacher.png",
-    title: "প্রাথমিক শিক্ষক নিয়গ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/bank.png",
-    title: "ব্যাংক জব",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/judge.png",
-    title: "সহকারী জজ নিয়োগ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/policeman.png",
-    title: "এসআই নিয়োগ",
-  },{
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/registration.png",
-    title: "শিক্ষক নিবন্ধন",
-  },
-];
-export default function WeAre() {
+
+export default function WeAre({weare}) {
   return (
     <div>
       <div className="container">

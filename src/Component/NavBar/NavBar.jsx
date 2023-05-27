@@ -82,7 +82,7 @@ function MenuBar() {
           <MenuLink to="/branches">
             শাখা সমূহ
           </MenuLink>
-          <MenuLink to="">
+          <MenuLink to="/course">
             কোর্স সমূহ
           </MenuLink>
           <MenuLink to="/examportal">
