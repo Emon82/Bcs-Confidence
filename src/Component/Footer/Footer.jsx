@@ -27,17 +27,17 @@ const Footer = () => {
               {/* @endif */}
               <div class="list-none">
                 {/* @if($key==0) */}
-                <h4><a style={{ color: "#9700ff" }} href="https://www.bcs-confidence.com">BCS Confidence</a></h4>
+                <h4><a style={{ color: "#9700ff" }} href="https://www.bcsconfidence.net">BCS Confidence</a></h4>
                 {/* @endif */}
                 {/* <h5><a href="javascript:;">{{$footcon->address}}</a></5> */}
                 <h5><a href="javascript:;">২৬, ইন্দিরা রোড, মা মেডিসিন ও UCB Bank বুথের ২য় তলা, ফার্মগেইট, ঢাকা</a></h5>
                 {/* @if($footcon->email) */}
                 {/* <h5><a href="mailto:{{$footcon->email}}">{{$footcon->email}}</a></h5> */}
-                <h5><a href="">info@bcs-confidence.net</a></h5>
+                <h5><a href="">info@bcsconfidence.net</a></h5>
                 {/* @endif */}
                 {/* @if($footcon->phone) */}
                 {/* <h5><a href="tel:{{$footcon->phone}}">{{$footcon->phone}}</a></h5> */}
-                <h5><a href="">+8801922-101514/15</a></h5>
+                <h5><a href="">+8801911322261</a></h5>
                 {/* @endif */}
               </div>
             </div>
@@ -76,10 +76,10 @@ const Footer = () => {
             <h5 class="mb-2">Follow Us On:</h5>
 
             <div class="social mb-5">
-              <a href="https://www.facebook.com/bcs-confidence.prostuti.net" target="_blank" rel="noreferrer"><i class="fab fa-facebook-square" style={{ fontSize: "30px", color: "#1877F2", marginRight: "10px" }} ></i></a>
-              <a href="https://twitter.com/prostuti_net" target="_blank" rel="noreferrer"><i class="fab fa-twitter" style={{ fontSize: "30px", color: "#1D9BF0", marginRight: "10px" }}></i></a>
+              <a href="https://www.facebook.com/BCSconfidenceOfficial" target="_blank" rel="noreferrer"><i class="fab fa-facebook-square" style={{ fontSize: "30px", color: "#1877F2", marginRight: "10px" }} ></i></a>
+              {/* <a href="https://twitter.com/prostuti_net" target="_blank" rel="noreferrer"><i class="fab fa-twitter" style={{ fontSize: "30px", color: "#1D9BF0", marginRight: "10px" }}></i></a>
               <a href="https://www.youtube.com" target="_blank" rel="noreferrer"><i class="fab fa-instagram" style={{ fontSize: "30px", color: "#FF0000", marginRight: "10px" }}></i></a>
-              <a href="https://bd.linkedin.com/in/prostuti-net-b040b9266/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin" style={{ fontSize: "30px", color: "#0A66C2", marginRight: "10px" }}></i></a>
+              <a href="https://bd.linkedin.com/in/prostuti-net-b040b9266/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin" style={{ fontSize: "30px", color: "#0A66C2", marginRight: "10px" }}></i></a> */}
             </div>
 
             {/* <a class="btn btn-dark" href="http://quizwin.xyz/admin/uploads/quizbuz.apk">

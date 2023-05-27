@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBook, FaHome, FaUser } from 'react-icons/fa';
+import { FaBook, FaHome } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from "../../assets/image/bcslogo.png";
@@ -90,16 +90,16 @@ function MenuBar() {
 
 <div className="col-md-4" style={{display:"flex",justifyContent:"end",padding:"15px"}}>
   <NavLinks>
-        <NavLink>
+        {/* <NavLink>
           <MenuLink to="/login">
             <FaUser />
             Login
           </MenuLink>
-        </NavLink>
+        </NavLink> */}
         <NavLink>
           <MenuLink to="https://bcsconfidence.prostuti.net/">
             <FaBook />
-            Exam
+            Exam Login
           </MenuLink>
         </NavLink>
         </NavLinks>

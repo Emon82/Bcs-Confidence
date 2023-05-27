@@ -30,7 +30,7 @@ export default function Banner({ header, image,text,title }) {
         className="header"
       >
         <div className="p-on-desktop" ref={sectionRef}>
-          <h1 style={{color:"gold"}}  >{header} </h1>
+          <h1 style={{color:"gold"}}> &ldquo;{header}&rdquo; </h1>
           <h6>{text}</h6>
           <h3>{title}</h3>
 
