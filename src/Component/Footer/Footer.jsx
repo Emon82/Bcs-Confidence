@@ -1,7 +1,18 @@
 import { React } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Footer.css";
 
 const Footer = () => {
+
+  const navigate= useNavigate();
+
+  const goToRule=()=> {
+    navigate("/rules");
+  }
+
+  const goToSpecial=()=> {
+    navigate("/special");
+  }
 
   return (
     <footer id="footer" class="section_gaps home_footer">
@@ -53,7 +64,7 @@ const Footer = () => {
                 {/* @if($key==0) */}
                 {/* @endif */}
                 {/* <h5><a href="javascript:;">{{$footcon->address}}</a></5> */}
-                <h5><a  href="javascript:;">নিয়মাবলি</a></h5>
+                <h5><a onClick={goToRule}  href="javascript:;">ভর্তির নিয়মাবলি</a></h5>
                 {/* @if($footcon->email) */}
                 {/* <h5><a href="mailto:{{$footcon->email}}">{{$footcon->email}}</a></h5> */}
                 <h5><a  href="">সকল প্রস্তুতি</a></h5>
@@ -61,6 +72,8 @@ const Footer = () => {
                 {/* @if($footcon->phone) */}
                 {/* <h5><a href="tel:{{$footcon->phone}}">{{$footcon->phone}}</a></h5> */}
                 <h5><a href="">FAQ</a></h5>
+
+                <h5><a onClick={goToSpecial}  href="javascript:;">আমাদের বৈশিষ্ট্য</a></h5>
                 {/* @endif */}
               </div>
             </div>

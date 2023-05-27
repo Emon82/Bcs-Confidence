@@ -73,6 +73,12 @@ function MenuBar() {
           <MenuLink to="/about">
             আমাদের সম্পর্কে
           </MenuLink>
+          <MenuLink to="/rules">
+            ভর্তির নিয়মাবলি
+          </MenuLink>
+          <MenuLink to="/special">
+          আমাদের বৈশিষ্ট্য
+          </MenuLink>
           <MenuLink to="/branches">
             শাখা সমূহ
           </MenuLink>

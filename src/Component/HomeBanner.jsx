@@ -33,9 +33,14 @@ export default function Banner({ header, image,text,title }) {
           <h1 style={{color:"gold"}}> &ldquo;{header}&rdquo; </h1>
           <h6>{text}</h6>
           <h3>{title}</h3>
-
-
         </div>
+
+        <div className="p-on-desktop" ref={sectionRef}>
+          <h1 style={{color:"green", fontWeight: "bold"}}> &ldquo;৩৪ বছরের অভিজ্ঞতা সমৃদ্ধ ঐতিহ্যবাহী একমাত্র প্রতিষ্ঠান&rdquo; </h1>
+          <h4>BCS Confidence</h4>
+          <h3>আমরা সফল হয়েছি, আপনারাও আসুন সফলতার পথে ...</h3>
+        </div>
+
       </div>
     </div>
   );

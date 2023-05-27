@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+input:focus {
+    box-shadow: none;
+    outline: unset;
+}
+
+textarea:focus {
+    box-shadow: none;
+    outline: unset;
+}
+
+select:focus {
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Tiro Bangla', serif !important;
+    /* background: #FFD700; */
+}
+
+.custome_width {
+    max-width: 1440px;
+    padding: 0 80px;
+}
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+    /* --bg_color: #0071DC; */
+    --bg_color: #0078CF;
+}
+
+a {
+    transition: all linear .2s;
+}
+
+button {
+    transition: all linear .2s;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+}
+
+.section_gaps {
+    padding: 100px 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.navbar {
+    padding: 0;
+    margin: 0;
+    height: 138px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: #FFF;
+    /* border-bottom: 1px solid #ddd; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 110px;
+    }
+}
+
+.navbar.scrolled {
+    /* transform: translateY(-50%); */
+    height: 67px;
+}
+
+.navbar.scrolled a.navbar-brand img {
+    /* width: 126px; */
+}
+
+.navbar-brand {
+
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 400;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.navbar a.active {
+    color: var(--bg_color) !important;
+}
+
+.navbar a:hover {
+    color: var(--bg_color);
+}
+
+.navbar form a {
+    background: var(--bg_color);
+    color: #FFF;
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.navbar form a:hover {
+    color: #FFF;
+    background: rgba(0, 120, 207, .8);
+}
+
+a.navbar-brand img {
+    height: 136px;
+    /* width: 267px; */
+    transition: all 0.5s;
+}
+
+/* mobile Menu */
+
+.mobile_menu {
+    display: none;
+}
+
+.mobile_menu .btn {
+    background: none;
+}
+
+.mobile_menu .btn img {
+    height: 35px;
+    transform: rotate(180deg);
+}
+
+.offcanvas-start {
+    width: 70%;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.offcanvas-body {
+    position: relative;
+}
+
+.offcanvas-body .copy_right {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.offcanvas-body .copy_right p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modal-body li {
+    margin-bottom: 10px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner {
+    padding: 180px 0;
+    position: relative;
+    /* margin-top: 138px; */
+    /*border: 2px solid red;*/
+}
+
+#banner::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color:#5b4be9 ; */
+    opacity: .2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner h1 {
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+#banner a {
+    font-size: 24px;
+    line-height: 30px;
+    background: var(--bg_color);
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: #FFF;
+
+}
+
+#banner a:hover {
+    background: rgba(0, 120, 207, .8);
+}
+
+.banner_content {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#banner .left h4 {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+#banner .left span {
+    color: #F9A826;
+    font-size: 45px;
+}
+
+#banner .left h5 {
+    margin-top: 20px;
+}
+
+#banner .left h5 a {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+    background: none;
+    color: var(--bg_color);
+    padding: 0;
+    margin-top: 0;
+}
+
+#banner .left h5 img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.banner_content .img {
+    position: relative;
+}
+
+.banner_content .overlay_img {
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.banner_content .overlay_img img {
+    height: 100px;
+}
+
+.banner_content img {
+    width: 100%;
+}
+
+.banner_content .text {
+    margin-top: 30px;
+}
+
+.banner_content .text h3 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--bg_color);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Login Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#login {
+    background: rgb(91, 90, 199);
+    background: linear-gradient(90deg, #fa668b 0%, rgba(168, 243, 174, 0.699) 24.38%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_coltent .img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login_coltent .img img {
+    height: 90px;
+}
+
+.login_coltent {
+    background: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.login_coltent h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+.custome_input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.custome_input label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.custome_input input {
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.custome_input button {
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    background: var(--bg_color);
+    color: #FFF;
+    padding: 8px 30px;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.custome_input button a {
+    color: #FFF;
+}
+
+.custome_input button:hover {
+    background: rgba(0, 120, 207, .8);
+}
+
+.custome_input h3 a {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #000;
+}
+
+.custome_input h3 a:hover {
+    color: var(--bg_color);
+}
+
+.custome_input.verification input {
+    width: 70px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.custome_input button.resend {
+    background: #ED1C24;
+    margin-right: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.footer_content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.footer_content ul {
+    margin-top: 20px;
+}
+
+.footer_content ul li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.footer_content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer_content ul li a {
+    font-size: 16px;
+    color: #000;
+    word-break: break-all;
+    position: relative;
+}
+
+.footer_content ul li a::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--bg_color);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Rules Page PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner.Banner_others {
+    background: url('../images/team.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+#banner.Banner_others::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgb(12 41 106 / 70%);
+    width: 100%;
+    height: 100%;
+}
+
+#banner.Banner_others .left {
+    position: relative;
+    z-index: 9;
+}
+
+#banner.Banner_others h1 {
+    color: #FFF;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Rules PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.rules_content {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.rules_content h3 {
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--bg_color);
+}
+
+.rules_content ul {
+    margin-top: 30px;
+}
+
+.rules_content ul li {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.rules_content ul li::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--bg_color);
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START faq PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner.Banner_others.faq {
+    background: url('../images/question.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.faq_Tabs_part {
+    margin-top: 30px;
+}
+
+.faq_Tabs_part button {
+    background: var(--bg_color);
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq_Tabs_part button svg {
+    transition: all linear .3s;
+}
+
+.faq_Tabs_part button.btn.collapsed svg {
+    transform: rotate(0deg);
+}
+
+.faq_Tabs_part button.btn svg {
+    transform: rotate(-180deg);
+}
+
+.faq_Tabs_part button:hover {
+    color: #FFF;
+}
+
+.faq_Tabs_part button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.tabs_content {
+    margin-top: 10px;
+}
+
+.tabs_content .card {
+    background: none;
+    border: none;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Result PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner.Banner_others.result {
+    background: url('../images/result.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.result_header h3 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    color: var(--bg_color);
+    text-align: center;
+}
+
+.result_content {
+    margin-top: 50px;
+}
+
+.result_item {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.result_content .img {
+    text-align: center;
+}
+
+.result_content img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.result_content .text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result_content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000;
+}
+
+.result_content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START attend_quiz_item PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.attend_quiz_item {
+    background: #FFF;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 5%);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--bg_color);
+    transition: all linear .3s;
+}
+
+.attend_quiz_item .text {
+    margin-top: 30px;
+}
+
+.attend_quiz_item h3 {
+    font-weight: 400;
+    font-size: 24px;
+    background: var(--bg_color);
+    display: inline-block;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.attend_quiz_item h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #f890c9;
+}
+
+.attend_quiz_item ul {
+    margin-top: 20px;
+}
+
+.attend_quiz_item ul li a {
+    background: none;
+    box-shadow: none;
+    display: inline-block;
+    width: auto;
+    color: #000;
+    font-size: 20px;
+}
+
+.attend_quiz_item ul li a:hover {
+    color: var(--bg_color);
+}
+
+.attend_quiz_item .start button {
+    margin-top: 30px;
+    background: #FFB601;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.attend_quiz_item .start a {
+    margin-top: 30px;
+    background: #FFB601;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Buy Coin PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.buy_coin .attend_quiz_item .start button {
+    background: var(--bg_color);
+    color: #FFF;
+    padding: 10px 50px;
+}
+
+.buy_coin .attend_quiz_item .img img {
+    height: 40px;
+}
+
+.coin_img {
+    margin-top: 30px;
+}
+
+.coin_img img {
+    height: 120px;
+}
+
+.buy_coin .attend_quiz_item h4 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.buy_coin .attend_quiz_item h5 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* start_quiz */
+.start_quiz .time {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFB601;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_quiz .time h6 {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+
+.start_quiz .time h6 span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    left: 145%;
+    font-weight: 400;
+}
+
+.start_quiz h4 {
+    color: #000;
+}
+
+.start_quiz ul li {
+    background: #FFB601;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 8px 10px;
+    border-radius: 30px;
+}
+
+.start_quiz ul li:last-child {
+    margin-bottom: 0;
+}
+
+.start_quiz ul li a {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.start_quiz ul li a span {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFF;
+    color: #000;
+    margin-right: 10px;
+}
+
+.quiz_prograss {
+    margin-top: 20px;
+}
+
+.quiz_prograss .progress {
+    height: 10px;
+    background-color: #fa4a4a;
+    width: 85%;
+    margin-right: 20px;
+}
+
+.quiz_prograss h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fa4a4a;
+}
+
+
+/* loading */
+
+.loading_content {
+    box-shadow: 0px 28px 113.46px rgb(29 41 100 / 12%), 0px 91.9235px 66.4476px rgb(29 41 100 / 2%), 0px 54.6288px 36.1391px rgb(29 41 100 / 2%);
+    border-radius: 5px;
+}
+
+.loading_content img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.loading_content .text {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.loading_content h3 {
+    font-size: 24px;
+    color: var(--bg_color);
+    font-weight: 700;
+}
+
+.loading_content p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.loading_content .progress {
+    height: 8px;
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+/* congrass */
+
+.congrass h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.congrass ul {
+    margin-top: 30px;
+}
+
+.congrass ul li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.congrass ul li:last-child {
+    margin-bottom: 0;
+}
+
+.congrass ul li a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.congrass ul li span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.congrass h6 {
+    background: #EDF7EE;
+    margin: 0 -30px;
+    margin-top: 20px;
+    padding: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}

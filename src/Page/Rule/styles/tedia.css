@@ -1,0 +1,538 @@
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1440px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    #banner h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    #banner a {
+        padding: 15px 50px;
+    }
+
+    #banner .overlay img {
+        height: 180px;
+    }
+
+    a.navbar-brand img {
+        height: 91px;
+        width: 178px;
+    }
+
+    #footer .logo img {
+        height: 50px;
+    }
+
+    .banner_content .text h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #banner .left h4 {
+        margin-top: 20px;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    #banner .left h5 a {
+        font-size: 30px;
+    }
+
+    .navbar form a {
+        padding: 6px 30px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .rules_content ul li {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .rules_content ul li::after {
+        top: 8px;
+    }
+
+    .result_content img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .result_content h3 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .result_item {
+        padding: 0 5px;
+    }
+
+    .result_content p {
+        font-size: 14px;
+    }
+
+    .login_coltent h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .login_coltent .img img {
+        height: 73px;
+    }
+
+    .custome_input h3 a {
+        font-size: 20px;
+    }
+
+    .custome_input button {
+        font-size: 18px;
+    }
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1024px) {
+
+    #banner h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    #banner .overlay img {
+        height: 150px;
+    }
+
+    #banner a {
+        padding: 15px 40px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #banner .left h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #banner .left h5 {
+        margin-top: 15px;
+    }
+
+    #banner .left h5 a {
+        font-size: 24px;
+    }
+
+    .banner_content .text h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .footer_content ul li a {
+        font-size: 14px;
+    }
+
+    .faq_Tabs_part button {
+        font-size: 18px;
+    }
+
+    .result_header h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .result_content img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .result_item {
+        padding: 0;
+    }
+
+    .custome_input h3 a {
+        font-size: 16px;
+    }
+
+    .custome_input label {
+        font-size: 16px;
+    }
+
+    .custome_input.verification input {
+        width: 50px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    .login_coltent {
+        padding: 25px;
+    }
+
+    .custome_input button.resend {
+        margin-right: 0;
+    }
+
+    .coin_img img {
+        height: 50px;
+    }
+
+    .buy_coin .attend_quiz_item h4 {
+        font-size: 26px;
+        line-height: 35px;
+        margin-top: 0px;
+    }
+
+    .coin_img {
+        margin-top: 15px;
+    }
+
+    .buy_coin .attend_quiz_item .img img {
+        height: 33px;
+    }
+
+    .attend_quiz_item .text {
+        margin-top: 15px;
+    }
+
+    .buy_coin .attend_quiz_item h5 {
+        font-size: 26px;
+        margin-top: 5px;
+    }
+
+    .buy_coin .attend_quiz_item .start button {
+        padding: 10px 30px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .attend_quiz_item {
+        padding: 20px;
+    }
+
+    .attend_quiz_item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .attend_quiz_item img {
+        height: 40px;
+    }
+
+    .attend_quiz_item h3 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .attend_quiz_item h4 {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .attend_quiz_item ul li a {
+        font-size: 16px;
+    }
+
+    .attend_quiz_item ul {
+        margin-top: 15px;
+    }
+
+    .attend_quiz_item .start button {
+        margin-top: 20px;
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+
+    .congrass h6 {
+        margin: 0 -20px;
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .congrass ul li {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 95%;
+    }
+
+    a.navbar-brand img {
+        height: 50px;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #banner .left {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #banner .col-lg-6:first-child {
+        order: 2;
+    }
+
+    .banner_content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #banner {
+        padding-top: 50px;
+    }
+
+    .banner_content img {
+        width: 75%;
+    }
+
+    .banner_content .overlay_img img {
+        height: 100px;
+        width: 100%;
+    }
+
+    #banner .overlay img {
+        height: auto;
+    }
+
+    #banner .left h5 a {
+        justify-content: center;
+    }
+
+    .custome_input button.resend {
+        margin-right: 10px;
+    }
+
+    .section_gaps {
+        padding: 80px 0;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .attend_quiz_item {
+        padding: 15px;
+    }
+
+    .buy_coin .attend_quiz_item h4 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .buy_coin .attend_quiz_item h5 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .coin_img img {
+        height: 45px;
+    }
+
+    .attend_quiz_item .start a {
+        margin-top: 20px;
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+
+    .congrass h6 {
+        margin: 0 -15px;
+        margin-top: 20px;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #rules {
+        padding-bottom: 0;
+    }
+
+
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    #banner .overlay img {
+        height: 120px;
+    }
+
+    #banner h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #banner .left h4 {
+        margin-top: 30px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .footer_content {
+        margin-top: 30px;
+    }
+
+    a.navbar-brand img {
+        height: 90px;
+        width: 167px;
+    }
+
+    #banner {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .rules_content {
+        padding: 20px;
+    }
+
+    .login_coltent {
+        padding: 20px;
+    }
+
+    .login_coltent h2 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .custome_input.verification input {
+        width: 45px;
+        height: 40px;
+        margin: 0 8px;
+    }
+
+    .custome_input button.resend {
+        margin-right: 0;
+    }
+
+    .attend_quiz_item img {
+        height: 35px;
+    }
+
+    .buy_coin .attend_quiz_item .start button {
+        padding: 10px 20px;
+    }
+
+    .attend_quiz_item .text {
+        margin-top: 10px;
+    }
+
+    .buy_coin .attend_quiz_item h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .buy_coin .attend_quiz_item h5 {
+        font-size: 22px;
+        margin-top: 2px;
+    }
+
+    .buy_coin .attend_quiz_item .start button {
+        padding: 6px 20px;
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .attend_quiz_item {
+        padding: 10px;
+    }
+
+    #banner.Banner_others .left {
+        margin-top: 0;
+    }
+
+    #banner.Banner_others {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .buy_coin .attend_quiz_item .img img {
+        height: 33px;
+        display: none;
+    }
+
+    .coin_img {
+        margin-top: 0;
+    }
+
+    .attend_quiz_item img {
+        height: 73px;
+    }
+
+    #attend_quiz.section_gaps {
+        padding: 35px 0;
+        padding-bottom: 0;
+    }
+
+    .attend_quiz_item.last_child {
+        margin-bottom: 0;
+    }
+
+    .congrass h6 {
+        margin: 0 -10px;
+        margin-top: 20px;
+    }
+
+    .start_quiz .time {
+        width: 70px;
+        height: 70px;
+    }
+
+    .start_quiz ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+    }
+
+    .congrass h6 {
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    .congrass ul li {
+        margin-bottom: 8px;
+    }
+
+    #banner {
+        padding-top: 52px;
+        padding-bottom: 20px;
+    }
+
+    #banner .overlay img {
+        height: 100px;
+    }
+
+    .banner_content .text {
+        margin-top: 20px;
+    }
+
+    #banner .left {
+        margin-top: 30px;
+    }
+
+    #banner h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #banner .left span {
+        font-size: 35px;
+    }
+
+
+}
