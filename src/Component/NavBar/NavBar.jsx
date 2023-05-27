@@ -57,7 +57,7 @@ function MenuBar() {
   return (
     <div className="row">
     <Navbar>
-     
+      
         <div className="col-md-2" style={{textAlign:"center"}}>
       <Logo><img style={{height:"80px"}} src={logo} alt="" /></Logo>
 
