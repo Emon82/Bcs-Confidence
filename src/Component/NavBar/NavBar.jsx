@@ -59,7 +59,7 @@ function MenuBar() {
     <Navbar>
       
         <div className="col-md-2" style={{textAlign:"center"}}>
-      <Logo><img style={{height:"80px"}} src={logo} alt="" /></Logo>
+      <Logo> <a href="/"><img style={{height:"80px"}} src={logo} alt="" /> </a></Logo>
 
       </div>
       
