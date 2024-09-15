@@ -1,53 +1,65 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-
-
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function BasicExample() {
-  const TeacherInformation=[{ 
-    title:"লায়ন মু. গিয়াস উদ্দিন",
-    src:"https://www.bcs-confidence.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-03-at-12.44.34-PM-286x300.jpeg",
-    text:"সরকারি চাকরিতে নিয়ােগের জন্যে বাংলাদেশ পাবলিক সার্ভিস কমিশন প্রতি বছর বিভিন্ন প্রতিযােগিতামূলক পরীক্ষার  করে। এসব পরীক্ষায় সফলতা লাভ করলে সম্মানজনক সরকারি চাকরি পাওয়া সম্ভব। গুরুত্বপূর্ণ এসব পরীক্ষার মধ্যে BCS পরীক্ষা বিশেষভাবে উল্লেখযােগ্য। সাম্প্রতিককালে সরকারি চাকরিজীবিদের বেতন কয়েকগুণ বৃদ্ধি পাওয়ায় বিসিএস পরীক্ষায় প্রতিযােগির সংখ্যা আগের তুলনায় কয়েকগুণ বৃদ্ধি পেয়েছে। অন্যদিকে শূন্যপদের সংখ্যা আনুপাতিক হারে বৃদ্ধি না পাওয়ায় প্রতিদ্বন্দ্বিতা বেড়েছে অবিশ্বাস্য গতিতে। কনফিডেন্স অর্থ আস্থা, বিশ্বস্ততা, নির্ভরশীলতা ও আত্মবিশ্বাস। আর এই আত্মবিশ্বাস হলাে সফলতার পূর্বশর্ত। তাই শিক্ষক ছাত্র-ছাত্রীদের সাথে পারস্পরিক আলােচনা, অভিজ্ঞজনের পরামর্শের ভিত্তিতে প্রস্তুতি প্রদারে পদ্ধতি ও কৌশল ঠিক করাই আত্মবিশ্বাস অর্জনের শ্রেষ্ঠ উপায়। কনফিডেন্স গত ৩২ বছর যাবৎ অভিজ্ঞ, কর্মঠ, পরিশ্রমী, একনিষ্ঠ, যােগ্য নিবেদিত, প্রকৃত জ্ঞান সম্পন্ন শিক্ষকমন্ডলী, দক্ষ কর্মকর্তাবৃন্দ ও ব্যবস্থাপনা পরিচালক দ্বারা পরিচারিত। এর প্রতিটি শাখা ব্যবস্থাপনা পরিচালক কর্তৃক কর্পোরেট অফিস ঢাকা থেকে নিয়ন্ত্রিত ও পরিচারিত। ঢাকা থেকে সকল শাখায় অভিজ্ঞ শিক্ষকমন্ডলী গিয়ে ক্লাস নিয়ে থাকেন। প্রতিষ্ঠানটির কর্মব্যবস্থাপনায় রয়েছে একদল দক্ষ এক্সিকিউটিভ কাউন্সেলর, পরীক্ষা নিয়ন্ত্রক, সহকারী লায়ন মু. গিয়াস উদ্দিন স্যার। ব্যবস্থাপক, ব্যবস্থাপক, সাধারণ ব্যবস্থাপক, সহকারী ব্যবসথাপনা পরিচালক ও ব্যবস্থাপনা পরিচালক। বিসিএস প্রস্তুতি ছাড়া কনফিডেন্সে আপনি ব্যাংক জব, শিক্ষক নিবন্ধন, হাই স্কুল/ প্রাইমারি স্কুল শিক্ষক নিয়ােগ, খাদ্য পরিদর্শক, সহকারী জজ ও অন্যান্য চাকুরির পরীক্ষার প্রস্তুতি গ্রহণ করতে পারবেন। এই সকল কোর্সে আমাদের সফলতা প্রায় ৯৫%"
-    
+  const navigate = useNavigate(); // Use the useNavigate hook
+
+  const TeacherInformation = [
+    {
+      title: "লায়ন মু. গিয়াস উদ্দিন",
+      src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-03-at-12.44.34-PM-286x300.jpeg",
+      text: "প্রিয় বিসিএস প্রত্যাশী ভাই ও বােন,আসসালামু আলাইকুম। আশা করি, সবকিছু মিলে সবকিছু ছাড়িয়ে ভালােই আছেন। প্রিয় পরীক্ষার্থীবৃন্দ, একটা বিষয় হয়তাে অনেকেই অবগত আছেন তবুও শেয়ার করতে ভালাে লাগছে। যে, বিসিএস ক্যাডার প্রত্যাশিদের জন্য সবচেয়ে বড় সুখবর হলাে ২০০৮ সাল থেকে প্রায় প্রতিবছরই বিসিএস পরীক্ষার সার্কুলার হচ্ছে। সরকার ও বাংলাদেশ সরকারি কর্মকমিশনের সমন্বিত উদ্যোগের। ফল ভােগ করছেন ...",
     },
-  ]
+  ];
+
+  // Navigate to the new page on button click
+  const handleReadMore = () => {
+    navigate("/teacher-details");
+  };
 
   return (
     <div className="container">
-      <h3 className="text-center" style={{padding:"50px",color:"black"}}>প্রতিষ্ঠাতার কথা</h3>
+      <h3 className="text-center" style={{ padding: "50px", color: "black" }}>
+        প্রতিষ্ঠাতার কথা
+      </h3>
 
-    
-    <div className="row">
-      
-      {TeacherInformation.map(({src,text,title})=>(
-        <>
-        <div className="col-md-4" style={{padding:"25px"}}>
-    <Card style={{ width: '18rem',padding:"25px" }}>
-      <Card.Img  variant="top" src={src} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>
-        প্রতিষ্ঠাতা <br />
-BCS কনফিডেন্স
-        </Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
-      </Card.Body>
-      
-    </Card>
+      <div className="row">
+        {TeacherInformation.map(({ src, text, title }) => (
+          <>
+            <div className="col-md-4" style={{ padding: "25px" }}>
+              <Card style={{ width: "18rem", padding: "25px" }}>
+                <Card.Img variant="top" src={src} />
+                <Card.Body>
+                  <Card.Title>{title}</Card.Title>
+                  <Card.Text>
+                    প্রতিষ্ঠাতা <br />
+                    BCS কনফিডেন্স
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-md-8">
+              <Card.Title
+                style={{
+                  padding: "25px",
+                  textAlign: "justify",
+                  fontSize: "large",
+                }}
+              >
+                {text}
+              </Card.Title>
+              <div className="" style={{textAlign:"center"}}>
+                <Button variant="primary" onClick={handleReadMore}>
+                  আরও পড়ুন
+                </Button>
+              </div>
+            </div>
+          </>
+        ))}
+      </div>
     </div>
-    <div className="col-md-8">
-
-    <Card.Title style={{padding:"25px",textAlign:"justify",fontSize:"large"}}>{text}</Card.Title>
-        <Button variant="primary">আরও পড়ুন</Button>
-        
-    </div>
-    </>
-      ))}
-      
-    </div>
-    </div>
-    
   );
 }
 

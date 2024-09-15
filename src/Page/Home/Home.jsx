@@ -10,76 +10,7 @@ import homeimage from "../../assets/image/coverHome.jpg";
 import SubjectList from "../../Component/SubjectList";
 
 
-const weare = [
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/priliicon.png",
-    title: "BCS প্রিলিমিনারি",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/office-material.png",
-    title: "BCS লিখিত",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/job-interview.png",
-    title: "BCS ভাইভা",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/teacher.png",
-    title: "প্রাথমিক শিক্ষক নিয়গ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/bank.png",
-    title: "ব্যাংক জব",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/judge.png",
-    title: "সহকারী জজ নিয়োগ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/policeman.png",
-    title: "এসআই নিয়োগ",
-  },{
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/registration.png",
-    title: "শিক্ষক নিবন্ধন",
-  },
-];
-const weare2 = [
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/priliicon.png",
-    title: "বাংলাদেশের ইতিহাস ও বিশ্ব সভ্যতা ৯ম ও ১০ম (মূল বই )",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/office-material.png",
-    title: "গণপ্রজাতন্তী বাংলাদেশের সংবিধান (মূল বই ) ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/job-interview.png",
-    title: "বিশ্ব রাজনীতির ১০০ বছর (১ম ও ২য় খণ্ড )",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/teacher.png",
-    title: "রাজনীতি কোষ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/bank.png",
-    title: "ভূগোল বই নবম ও দশম  ",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/judge.png",
-    title: "সাধারন বিজ্ঞান (নবম ও দশম)- পদার্থ, রসায়ন, জিব-বিজ্ঞান বই",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/policeman.png",
-    title: "সাধারন বিজ্ঞান (অষ্টম)",
-  },{
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/registration.png",
-    title: "প্রকৌশলী মুজিবুর রহমান কম্পিউটার বই  (একাদশ- দ্বাদশ)",
-  },
-  {
-    src: "https://www.bcs-confidence.com/wp-content/uploads/2022/07/registration.png",
-    title: "উচ্চ মাধ্যমিক পোঁরনীতি- মোজাম্মেল হক (১ম ও ২য় পত্র)",
-  },
-];
+
 export default function Home() {
   return (
     <div>
@@ -93,7 +24,7 @@ export default function Home() {
         title={"Lead By: Lion Taslima Gias"}
       />
       <h3 className="text-center m-3 ">আমাদের কার্যক্রম সমূহ</h3>
-      <WeAre weare={weare} />
+      <WeAre weare={''} />
       <div
         className=""
         style={{ backgroundColor: "rgb(249 249 249)", marginTop: "50px" }}
@@ -114,7 +45,7 @@ export default function Home() {
       </div>
 <div className="">
 <h3 className="text-center m-3 ">আমাদের বুক সমূহ</h3>
-      <SubjectList weare={weare2} />
+      <SubjectList weare={''} />
 </div>
       <Footer />
     </div>

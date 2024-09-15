@@ -15,19 +15,20 @@ export default function Information() {
       autoplaySpeed: 2000
       };
   return (
-    <div className='container'>
-    <Slider {...settings}>
-      <div>
-        <InformationCard/>
-      </div>
-      <div>
-        <Information2/>
-      </div>
-      <div>
-      <Information3/>
-      </div>
-      
-    </Slider>
-  </div>
-  )
+    <div className="container">
+      <Slider {...settings}>
+        <div>
+          <InformationCard />
+        </div>
+        <div>
+          {/* <Information2/> */}
+          <InformationCard />
+        </div>
+        <div>
+          {/* <Information3/> */}
+          <InformationCard />
+        </div>
+      </Slider>
+    </div>
+  );
 }

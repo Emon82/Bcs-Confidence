@@ -8,6 +8,7 @@ import Home from "./Page/Home/Home";
 import Rule from "./Page/Rule";
 import Special from "./Page/Special";
 import Course from "./Page/Courses/Course";
+import TeacherDetails from './Page/TeacherDetails/index'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/branches" element={<Branch />} />
         <Route path="/contact" element={<Contact />} />
+         <Route path="/teacher-details" element={<TeacherDetails />} />
         <Route path="/examportal" element={<ExamPanel />} />
         <Route path="/rules" element={<Rule />} />
         <Route path="/special" element={<Special />} />

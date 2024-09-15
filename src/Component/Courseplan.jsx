@@ -1,142 +1,169 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  Container,
+  Box,
+} from "@mui/material";
 
 const Courseplan = () => {
   return (
-    <div className="container" style={{ marginTop: "50px" }}>
-      <Table striped bordered hover variant="dark">
-        <thead>
-          <tr>
-            <th>বিষয়</th>
-            <th>নাম্বার </th>
-            <th>ক্লাস সংখ্যা </th>
-            <th>ক্লাস টেস্ট</th>
-            <th>লেকচার শিট</th>
-            <th>এসাইনমেন্ট টেস্ট</th>
-            <th>বিসয়ভিওিক টেস্ট</th> 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>বাংলা ভাষা </td>
-            <td>১৫</td>
-            <td>০৮ টি </td>
-            <td>১০ টি</td>
-            <td>১০ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>বাংলা সাহিত্য </td>
-            <td>২০</td>
-            <td>১১ টি </td>
-            <td>১১ টি</td>
-            <td>১১ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>English Language </td>
-            <td>২০</td>
-            <td>২৩ টি </td>
-            <td>১৭ টি</td>
-            <td>১৭ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>English Literature </td>
-            <td>১৫</td>
-            <td>০৭ টি </td>
-            <td>০৭ টি</td> 
-            <td>০৭ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>বাংলাদেশ বিষয়াবলি  </td>
-            <td>৩০</td>
-            <td>২০ টি </td>
-            <td>১৬ টি</td>
-            <td>১৬ টি</td>
-            <td>২ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>আন্তর্জাতিক বিষয়াবলি </td>
-            <td>২০</td>
-            <td>১৩ টি </td>
-            <td>১৩ টি</td>
-            <td>১৩ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>ভূগোল (বাংলাদেশ ও বিশ্ব),পরিবেশ ও দুর্যোগ ব্যবস্তাপনা  </td>
-            <td>১০</td>
-            <td>০৭ টি </td>
-            <td>০৭ টি</td>
-            <td>০৭ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>সাধারন বিজ্ঞান </td>
-            <td>১৫</td>
-            <td>১২ টি </td>
-            <td>১২ টি</td>
-            <td>১২ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>কম্পিউটার ও তথ্য প্রযুক্তি   </td>
-            <td>১৫</td>
-            <td>০৮ টি </td>
-            <td>০৮ টি</td>
-            <td>০৮ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>গাণিতিক যুক্তি   </td>
-            <td>১৫</td>
-            <td>২৪ টি </td>
-            <td>২৪ টি</td>
-            <td>২১ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>মানসিক দক্ষতা   </td>
-            <td>১৫</td>
-            <td>০৬ টি </td>
-            <td>০৬ টি</td>
-            <td>০৬ টি</td>
-            <td> - টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>নৈতিকতা, মূল্যবোধ ও সু-শাসন  </td>
-            <td>১০</td>
-            <td>০৪ টি </td>
-            <td>০৪ টি</td>
-            <td>০৪ টি</td>
-            <td>১ টি</td>
-            <td>১ টি</td>
-          </tr>
-          <tr>
-          <td>মোট ঃ </td>
-            <td>২০০</td>
-            <td>১৩৪ টি </td>
-            <td>১৩০ টি</td>
-            <td>১৩৪ টি</td>
-            <td>১২ টি</td>
-            <td>১২ টি</td>
-          </tr>
-        </tbody>
-      </Table>
-    </div>
+    <Container maxWidth="lg">
+      <Box sx={{ marginTop: "50px", overflowX: "auto" }}>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 650 }} aria-label="course plan table">
+            <TableHead>
+              <TableRow>
+                <TableCell>বিষয়</TableCell>
+                <TableCell>নাম্বার</TableCell>
+                <TableCell>ক্লাস সংখ্যা</TableCell>
+                <TableCell>ক্লাস টেস্ট</TableCell>
+                <TableCell>লেকচার শিট</TableCell>
+                <TableCell>এসাইনমেন্ট টেস্ট</TableCell>
+                <TableCell>বিসয়ভিওিক টেস্ট</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {[
+                {
+                  subject: "বাংলা ভাষা",
+                  number: 15,
+                  classes: "০৮ টি",
+                  classTest: "১০ টি",
+                  lectureSheet: "১০ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "বাংলা সাহিত্য",
+                  number: 20,
+                  classes: "১১ টি",
+                  classTest: "১১ টি",
+                  lectureSheet: "১১ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "English Language",
+                  number: 20,
+                  classes: "২৩ টি",
+                  classTest: "১৭ টি",
+                  lectureSheet: "১৭ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "English Literature",
+                  number: 15,
+                  classes: "০৭ টি",
+                  classTest: "০৭ টি",
+                  lectureSheet: "০৭ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "বাংলাদেশ বিষয়াবলি",
+                  number: 30,
+                  classes: "২০ টি",
+                  classTest: "১৬ টি",
+                  lectureSheet: "১৬ টি",
+                  assignment: "২ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "আন্তর্জাতিক বিষয়াবলি",
+                  number: 20,
+                  classes: "১৩ টি",
+                  classTest: "১৩ টি",
+                  lectureSheet: "১৩ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject:
+                    "ভূগোল (বাংলাদেশ ও বিশ্ব),পরিবেশ ও দুর্যোগ ব্যবস্তাপনা",
+                  number: 10,
+                  classes: "০৭ টি",
+                  classTest: "০৭ টি",
+                  lectureSheet: "০৭ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "সাধারন বিজ্ঞান",
+                  number: 15,
+                  classes: "১২ টি",
+                  classTest: "১২ টি",
+                  lectureSheet: "১২ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "কম্পিউটার ও তথ্য প্রযুক্তি",
+                  number: 15,
+                  classes: "০৮ টি",
+                  classTest: "০৮ টি",
+                  lectureSheet: "০৮ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "গাণিতিক যুক্তি",
+                  number: 15,
+                  classes: "২৪ টি",
+                  classTest: "২৪ টি",
+                  lectureSheet: "২১ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "মানসিক দক্ষতা",
+                  number: 15,
+                  classes: "০৬ টি",
+                  classTest: "০৬ টি",
+                  lectureSheet: "০৬ টি",
+                  assignment: "- টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "নৈতিকতা, মূল্যবোধ ও সু-শাসন",
+                  number: 10,
+                  classes: "০৪ টি",
+                  classTest: "০৪ টি",
+                  lectureSheet: "০৪ টি",
+                  assignment: "১ টি",
+                  subjectTest: "১ টি",
+                },
+                {
+                  subject: "মোট ঃ",
+                  number: 200,
+                  classes: "১৩৪ টি",
+                  classTest: "১৩০ টি",
+                  lectureSheet: "১৩৪ টি",
+                  assignment: "১২ টি",
+                  subjectTest: "১২ টি",
+                },
+              ].map((row, index) => (
+                <TableRow key={index}>
+                  <TableCell>{row.subject}</TableCell>
+                  <TableCell>{row.number}</TableCell>
+                  <TableCell>{row.classes}</TableCell>
+                  <TableCell>{row.classTest}</TableCell>
+                  <TableCell>{row.lectureSheet}</TableCell>
+                  <TableCell>{row.assignment}</TableCell>
+                  <TableCell>{row.subjectTest}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Box>
+    </Container>
   );
 };
 
