@@ -15,7 +15,7 @@ const Footer = () => {
   }
 
   return (
-    <footer id="footer" class="section_gaps home_footer">
+    <footer id="footer" style={{padding:"20px"}} class="section home_footer">
       <div class="container none-on-small">
         <div class="row">
           <div class="col-lg-4 col-md-4">
